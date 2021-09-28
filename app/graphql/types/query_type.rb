@@ -6,7 +6,6 @@ module Types
 
     field :projects, [Types::ProjectType], null: false
     field :works, [Types::WorkType], null: false
-    field :projects_count, Integer, null: false
 
     def projects
       Project.all
